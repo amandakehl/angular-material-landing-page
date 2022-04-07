@@ -1,0 +1,57 @@
+.all-form {
+    margin-left: 20px;
+    padding-left: 40px;
+    margin-top: 200px;
+}
+
+.spans {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+.span-questions {
+    color: var(--blue);
+    font-size: 4em;
+    font-weight: 900;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.span-contact {
+    color: var(--blue);
+    font-size: 3.5em;
+    font-weight: 500;
+    font-family: serif;
+    font-style: italic;
+    margin-top: 30px;
+}
+
+.form {
+    margin: 40px 20px 20px 0;
+    display: grid;
+    grid-template-columns: 20em 20em;
+    grid-template-areas:
+        "name email"
+        "subject subject"
+        "message";
+}
+
+mat-form-field {
+    margin-right: 15px;
+}
+
+.name {
+    grid-area: name;
+}
+
+.email {
+    grid-area: email;
+}
+
+.subject {
+    grid-area: subject;
+}
+
+.message {
+    grid-area: message;
+}

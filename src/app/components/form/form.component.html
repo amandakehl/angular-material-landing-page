@@ -1,0 +1,25 @@
+<section class="all-form">
+    <div class="spans">
+        <span class="span-questions">Questions?</span>
+        <span class="span-contact">Contact us <span role="img" aria-label="smile">:)</span></span>
+    </div>
+    <form class="form">
+        <mat-form-field floatLabel="auto" appearance="fill">
+            <mat-label>Name</mat-label>
+            <input class="name" matInput type="text" formControlName="name" required>
+        </mat-form-field>
+        <mat-form-field floatLabel="auto" appearance="fill">
+            <mat-label>E-mail</mat-label>
+            <input class="email" matInput type="text" formControlName="name" required>
+        </mat-form-field>
+        <mat-form-field floatLabel="auto" appearance="fill">
+            <mat-label>Subject</mat-label>
+            <input class="subject" matInput type="text" formControlName="name" required>
+        </mat-form-field>
+        <mat-form-field floatLabel="auto" appearance="fill">
+            <mat-label>Message</mat-label>
+            <textarea class="message" matInput formControlName="message" required></textarea>
+        </mat-form-field>
+        <button mat-flat-button color="primary">Send</button>
+    </form>
+</section>

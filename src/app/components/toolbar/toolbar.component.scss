@@ -1,0 +1,23 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+}
+
+.logo {
+    font-family: sans-serif;
+    color: var(--pink);
+    font-size: 2em;
+    font-weight: 800;
+}
+
+button {
+    margin-right: 10px;
+}
