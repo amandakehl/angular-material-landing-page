@@ -3,23 +3,24 @@
         <span class="span-questions">Questions?</span>
         <span class="span-contact">Contact us <span role="img" aria-label="smile">:)</span></span>
     </div>
-    <form class="form">
+    <form class="form" [formGroup]="formulario">
         <mat-form-field floatLabel="auto" appearance="fill">
             <mat-label>Name</mat-label>
-            <input class="name" matInput type="text" formControlName="name" required>
+            <input class="name" matInput type="text" formControlName="name">
         </mat-form-field>
         <mat-form-field floatLabel="auto" appearance="fill">
             <mat-label>E-mail</mat-label>
-            <input class="email" matInput type="text" formControlName="name" required>
+            <input class="email" matInput type="text" formControlName="email">
         </mat-form-field>
         <mat-form-field floatLabel="auto" appearance="fill">
             <mat-label>Subject</mat-label>
-            <input class="subject" matInput type="text" formControlName="name" required>
+            <input class="subject" matInput type="text" formControlName="subject">
         </mat-form-field>
         <mat-form-field floatLabel="auto" appearance="fill">
             <mat-label>Message</mat-label>
-            <textarea class="message" matInput formControlName="message" required></textarea>
+            <textarea class="message" matInput formControlName="message"></textarea>
         </mat-form-field>
-        <button mat-flat-button color="primary">Send</button>
+        <button mat-flat-button color="primary" type="submit" (click)="onSubmit(); validator()"
+            [disabled]="!this.formulario.valid">Send</button>
     </form>
 </section>
